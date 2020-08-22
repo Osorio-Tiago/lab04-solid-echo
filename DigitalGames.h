@@ -8,7 +8,7 @@
 #include "Game.h"
 
 class DigitalGames: public Game {
-
+public:
 };
 
 

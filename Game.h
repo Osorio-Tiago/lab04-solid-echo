@@ -8,11 +8,10 @@
 
 class Game {
 public:
+
     Game();
 
     Game(const std::string &name, double price, double tax);
-
-    Game(const std::string &name, double price, double itemWeight, const std::string &productDimensions);
 
     const std::string &getName() const;
 
@@ -26,25 +25,16 @@ public:
 
     void setTax(double tax);
 
-    double getItemWeight() const;
-
-    void setItemWeight(double itemWeight);
-
-    const std::string &getProductDimensions() const;
-
-    void setProductDimensions(const std::string &productDimensions);
-
     double calculatePriceWithTax();
 
     void save(const std::string &filename);
 
-    std::string toString();
-private:
+    virtual std::string toString() = 0;
+
+protected:
     std::string name;
     double price;
     double tax;
-    double itemWeight;
-    std::string productDimensions;
 };
 
 

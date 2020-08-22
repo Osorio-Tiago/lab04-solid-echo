@@ -8,6 +8,7 @@
 #include "Game.h"
 
 class StreamingGames: public Game {
+public:
 
 };
 
