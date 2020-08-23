@@ -9,6 +9,11 @@
 
 class StreamingGames: public Game {
 public:
+    StreamingGames(const std::string &name, double price, double tax);
+
+    std::string toString() override;
+
+
 
 };
 
