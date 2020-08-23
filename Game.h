@@ -5,8 +5,13 @@
 #ifndef LAB04_SOLID_GAME_H
 #define LAB04_SOLID_GAME_H
 #include <sstream>
+#include <iomanip>
+#include <fstream>
 
 class Game {
+private:
+
+    virtual double discount();
 public:
 
     Game();

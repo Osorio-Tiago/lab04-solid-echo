@@ -35,7 +35,7 @@ void Game::setTax(double tax) {
 }
 
 double Game::calculatePriceWithTax() {
-    return getPrice() + (getPrice() * getTax());
+    return discount() + (getPrice() * getTax());
 }
 
 /**
@@ -49,5 +49,7 @@ void Game::save(const std::string &filename) {
 
     ofs.close();
 }
+
+double Game::discount() { return getPrice(); }
 
 

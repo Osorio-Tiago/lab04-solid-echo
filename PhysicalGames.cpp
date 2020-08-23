@@ -3,8 +3,6 @@
 //
 
 #include "PhysicalGames.h"
-#include <iomanip>
-#include <fstream>
 
 PhysicalGames::PhysicalGames(){}
 
@@ -31,6 +29,7 @@ std::string PhysicalGames::toString() {
     std::ostringstream output;
     output << std::fixed << std::setprecision(2);
     output << "Game Name: " << getName()
+           << "\nGame type: Physical"
            << "\nItem Weight: " << getItemWeight()
            << "\nProduct Dimensions: " << getProductDimensions()
            << "\nPrice: $" << getPrice()
@@ -38,3 +37,5 @@ std::string PhysicalGames::toString() {
 
     return output.str();
 }
+
+double PhysicalGames::discount(){ return getPrice(); }

@@ -27,6 +27,7 @@ public:
 private:
     double itemWeight;
     std::string productDimensions;
+    double discount() override;
 };
 
 
