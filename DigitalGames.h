@@ -15,13 +15,13 @@ public:
     double getItemWeight() const;
 
     void setItemWeight(double _itemWeight);
-    std::string replace();
+    std::string replace() override;
 
     std::string toString() override;
 
 
 private:
-    double itemWeight;
+    double itemWeight; //Pero en Megabytes / Gigabytes
     double discount() override;
 
 };

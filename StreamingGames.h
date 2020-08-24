@@ -11,7 +11,7 @@
 class StreamingGames: public Game, public IReplaceable{
 public:
     StreamingGames(const std::string &name, double price, double tax);
-    std::string replace();
+    std::string replace() override;
 
     std::string toString() override;
 
