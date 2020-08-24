@@ -28,3 +28,4 @@ std::string StreamingGames::toString()
 
     return output.str();
 }
+//Prueba
