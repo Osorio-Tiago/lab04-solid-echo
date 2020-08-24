@@ -9,6 +9,13 @@ StreamingGames::StreamingGames(const std::string &name, double price, double tax
 
 }
 
+std::string StreamingGames::replace() {
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output<<"This product will have a replacement."<<endl;
+    return output.str();
+}
+
 
 std::string StreamingGames::toString()
 {

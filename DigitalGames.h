@@ -6,14 +6,16 @@
 #define LAB04_SOLID_DIGITALGAMES_H
 
 #include "Game.h"
+#include "IReplaceable.h"
 
-class DigitalGames: public Game{
+class DigitalGames: public Game, public IReplaceable{
 public:
     DigitalGames(const std::string &name, double price, double tax, double itemWeight);
 
     double getItemWeight() const;
 
     void setItemWeight(double _itemWeight);
+    std::string replace();
 
     std::string toString() override;
 

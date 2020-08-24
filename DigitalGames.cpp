@@ -13,6 +13,12 @@ double DigitalGames::getItemWeight() const { return itemWeight; }
 
 void DigitalGames::setItemWeight(double _itemWeight) { DigitalGames::itemWeight = _itemWeight; }
 
+std::string DigitalGames::replace() {
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output<<"This product will have a replacement."<<endl;
+    return output.str();
+}
 std::string DigitalGames::toString()
 {
     std::ostringstream output;

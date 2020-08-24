@@ -6,10 +6,12 @@
 #define LAB04_SOLID_STREAMINGGAMES_H
 
 #include "Game.h"
+#include "IReplaceable.h"
 
-class StreamingGames: public Game {
+class StreamingGames: public Game, public IReplaceable{
 public:
     StreamingGames(const std::string &name, double price, double tax);
+    std::string replace();
 
     std::string toString() override;
 
