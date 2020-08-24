@@ -6,8 +6,9 @@
 #define LAB04_SOLID_PHYSICALGAMES_H
 
 #include "Game.h"
+#include "IShippable.h"
 
-class PhysicalGames: public Game{
+class PhysicalGames: public Game, public IShippable{
 public:
 
     PhysicalGames();
@@ -21,6 +22,7 @@ public:
     const std::string &getProductDimensions() const;
 
     void setProductDimensions(const std::string &productDimensions);
+    std::string ship();
 
     std::string toString() override;
 

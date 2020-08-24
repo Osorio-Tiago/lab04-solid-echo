@@ -25,6 +25,13 @@ void PhysicalGames::setProductDimensions(const std::string &_productDimensions) 
     productDimensions = _productDimensions;
 }
 
+std::string PhysicalGames::ship() {
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output<<"This product will have a shipment"<<endl;
+    return output.str();
+}
+
 std::string PhysicalGames::toString() {
     std::ostringstream output;
     output << std::fixed << std::setprecision(2);
