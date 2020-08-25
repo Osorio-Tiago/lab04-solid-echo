@@ -22,6 +22,7 @@ public:
     const std::string &getProductDimensions() const;
 
     void setProductDimensions(const std::string &productDimensions);
+
     std::string ship() override;
 
     std::string toString() override;

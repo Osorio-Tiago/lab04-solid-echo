@@ -4,6 +4,8 @@
 
 #include "StreamingGames.h"
 
+StreamingGames::StreamingGames() {}
+
 StreamingGames::StreamingGames(const std::string &name, double price, double tax) : Game(name, price, tax)
 {
 

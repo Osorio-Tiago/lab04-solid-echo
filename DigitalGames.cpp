@@ -4,6 +4,8 @@
 
 #include "DigitalGames.h"
 
+DigitalGames::DigitalGames() {}
+
 DigitalGames::DigitalGames(const std::string &name, double price, double tax, double itemWeight) : Game(name, price, tax)
 {
     this->itemWeight = itemWeight;

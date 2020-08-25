@@ -8,9 +8,13 @@
 #include "Game.h"
 #include "IReplaceable.h"
 
-class StreamingGames: public Game, public IReplaceable{
+class StreamingGames: public Game, public IReplaceable {
 public:
+
+    StreamingGames();
+
     StreamingGames(const std::string &name, double price, double tax);
+
     std::string replace() override;
 
     std::string toString() override;

@@ -10,6 +10,9 @@
 
 class DigitalGames: public Game, public IReplaceable{
 public:
+
+    DigitalGames();
+
     DigitalGames(const std::string &name, double price, double tax, double itemWeight);
 
     double getItemWeight() const;
